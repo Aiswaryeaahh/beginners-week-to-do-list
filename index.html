@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <!-- root element- all html content is inside this tag -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for responsive web design
+    //content="width=device-width - used to match the screens width, ensure the page is responsive on all devices -->
+    <style> 
+    /* //internal css which styles directly within -html */
+        body{
+            margin:0;
+            min-width:250 px;
+        }
+    </style>
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- link tag connects external resources to the html file, rel tells the browser that its a css and href tells the file name -->
+</head>
+<body>
+    <div id="myDIV" class="header"> 
+        <!-- id is used by js to access this content and class is used by css to access the content directly -->
+        <h2>My To-Do-List</h2>
+        <input type="text" id="myInput" placeholder="Add new tasks">
+       <!-- input is used to add an input box. id is used by js to acess the content. placeholder- is a grey text appearing inside a box until user types something. -->
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    <ul id="myUL">
+    </ul>
+    <script src="script.js"></script>
+    <!-- links js to html -->
+    
+</body>
+</html>
